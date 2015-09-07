@@ -1,4 +1,5 @@
 FROM php:5.6-fpm
+ADD php-fpm.conf /usr/local/etc/php-fpm.conf
 
 # base
 RUN buildRequirements="curl wget" \
