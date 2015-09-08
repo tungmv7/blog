@@ -55,11 +55,6 @@ class SiteController extends Controller
     public function actionLogin()
     {
 
-        $test = \Yii::$app->db->isActive;
-        \Yii::$app->db->createCommand('select 1')->query();
-        var_dump($test);
-        exit;
-
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
