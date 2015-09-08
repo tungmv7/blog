@@ -15,8 +15,11 @@ RUN buildRequirements="libpng12-dev libjpeg-dev libfreetype6-dev" \
 	&& rm -rf /var/lib/apt/lists/*
 
 # mysql
-RUN docker-php-ext-install pdo_mysql
+RUN buildRequirements="postgresql libpq-dev" \
+	&& apt-get update && apt-get install -y ${buildRequirements} \
+    && docker-php-ext-install pdo_pgsql
 RUN docker-php-ext-install mysql
+RUN docker-php-ext-install pdo_mysql
 
 # mbstring
 RUN docker-php-ext-install mbstring

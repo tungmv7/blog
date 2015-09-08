@@ -1,10 +1,9 @@
 <?php
-
 namespace app\modules\admin\controllers;
 
 use app\components\Controller;
 
-class DefaultController extends Controller
+class ModuleController extends Controller
 {
     public function actionIndex()
     {
