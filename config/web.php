@@ -7,10 +7,18 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+
+        'view' => [
+            'class' => 'app\components\View'
+        ],
+        'controller' => [
+            'class' => 'app\components\Controller'
+        ],
         'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'class' => 'app\components\Request',
             'cookieValidationKey' => 'fqlsMyunZySMzrDALgmb_4-jc7U4l4df',
         ],
+
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -52,6 +60,7 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+        'allowedIPs' => ['*']
     ];
 }
 
