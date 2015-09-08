@@ -1,0 +1,12 @@
+{
+  "id": "post",
+  "name": "Post",
+  "class": "app\\modules\\post\\Module",
+  "isRequired": true,
+  "isCoreModule": true,
+  "description": "Post Module - Manage posts",
+  "keywords": [
+    "post"
+  ],
+  "version": "1.0"
+}

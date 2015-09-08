@@ -1,0 +1,12 @@
+{
+  "id": "admin",
+  "name": "Admin",
+  "class": "app\\modules\\admin\\Module",
+  "isRequired": true,
+  "isCoreModule": true,
+  "description": "Admin Module - Manage other modules",
+  "keywords": [
+    "core", "admin"
+  ],
+  "version": "1.0"
+}
