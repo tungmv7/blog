@@ -7,6 +7,10 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+        'assetManager' => [
+            'forceCopy' => true,
+            'appendTimestamp' => true
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
         ],

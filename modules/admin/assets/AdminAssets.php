@@ -1,13 +1,16 @@
 <?php
 namespace app\modules\admin\assets;
 
-use app\assets\AppAsset;
 use yii\web\AssetBundle;
 
 class AdminAssets extends AssetBundle
 {
-    public $basePath = '@webroot/modules/admin/assets';
+    public $sourcePath = '@app/modules/admin/assets/files';
     public $css = [
         'css/admin.css'
     ];
+    public $depends = [
+         'yii\web\YiiAsset',
+         'yii\bootstrap\BootstrapAsset',
+      ];
 }
