@@ -7,6 +7,13 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+        'i18n' => [
+            'translations' => [
+                'admin*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                ],
+            ]
+        ],
         'assetManager' => [
             'forceCopy' => true,
             'appendTimestamp' => true

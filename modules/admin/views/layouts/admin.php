@@ -57,6 +57,14 @@ NavBar::end();
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
 
+            <?php
+                if (!empty($this->params['menu'])) {
+                    echo Nav::widget([
+                        'class' => 'nav nav-sidebar',
+                        'items' => $this->params['menu']
+                    ]);
+                }
+            ?>
             <ul class="nav nav-sidebar">
                 <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Reports</a></li>
