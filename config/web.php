@@ -7,7 +7,9 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
-
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+        ],
         'view' => [
             'class' => 'app\components\View'
         ],
@@ -18,7 +20,6 @@ $config = [
             'class' => 'app\components\Request',
             'cookieValidationKey' => 'fqlsMyunZySMzrDALgmb_4-jc7U4l4df',
         ],
-
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
