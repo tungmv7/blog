@@ -8,7 +8,7 @@ class ModuleHelpers
 {
     public function getModules()
     {
-        $modules = \Yii::getAlias('sim');
-        VarDumper::dump($modules);
+        $modules = \Yii::getAlias('@sim');
+        VarDumper::dump($modules); exit;
     }
 }

@@ -9,7 +9,7 @@ $config = [
     'components' => [
         'i18n' => [
             'translations' => [
-                'admin*' => [
+                '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
                 ],
             ]
@@ -57,14 +57,6 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
     ],
-    'modules' => [
-        'admin' => [
-            'class' => '\sim\modules\admin\Module'
-        ],
-//        'post' => [
-//            'class' => '\sim\modules\post\Module'
-//        ]
-    ] ,
 
     'params' => $params,
 ];
