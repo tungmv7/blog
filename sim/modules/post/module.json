@@ -1,7 +1,7 @@
 {
   "id": "post",
   "name": "Post",
-  "class": "app\\modules\\post\\Module",
+  "class": "sim\\modules\\post\\Module",
   "isRequired": true,
   "isCoreModule": true,
   "description": "Post Module - Manage posts",
