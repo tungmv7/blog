@@ -59,11 +59,11 @@ $config = [
     ],
     'modules' => [
         'admin' => [
-            'class' => 'sim\modules\admin\Module'
+            'class' => '\sim\modules\admin\Module'
         ],
-        'post' => [
-            'class' => 'sim\modules\post\Module'
-        ]
+//        'post' => [
+//            'class' => '\sim\modules\post\Module'
+//        ]
     ] ,
 
     'params' => $params,

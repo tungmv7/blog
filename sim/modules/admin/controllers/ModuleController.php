@@ -8,11 +8,12 @@ use yii\filters\VerbFilter;
 
 use sim\modules\admin\models\module\Module;
 use sim\modules\admin\models\module\ModuleQuery;
+use sim\modules\admin\components\Controller;
 
 /**
  * ModuleController implements the CRUD actions for Module model.
  */
-class ModuleController extends AdminController
+class ModuleController extends Controller
 {
     public function behaviors()
     {
@@ -32,7 +33,8 @@ class ModuleController extends AdminController
      */
     public function actionIndex()
     {
-        \sim\modules\admin\helpers\ModuleHelper::getModules();
+        // get all modules
+        $modules = \sim\modules\admin\helpers\ModuleHelpers::getModules();
 
         $searchModel = new ModuleQuery();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);

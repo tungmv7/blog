@@ -1,9 +1,7 @@
 <?php
-namespace sim\modules\admin\controllers;
+namespace sim\modules\admin\components;
 
-use app\components\Controller;
-
-class AdminController extends Controller
+class Controller extends \yii\web\Controller
 {
 
     public function __construct($id, $module, $config = [])
