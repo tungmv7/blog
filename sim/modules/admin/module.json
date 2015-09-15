@@ -1,7 +1,7 @@
 {
   "id": "admin",
   "name": "Admin",
-  "class": "app\\modules\\admin\\Module",
+  "class": "sim\\modules\\admin\\Module",
   "isRequired": true,
   "isCoreModule": true,
   "description": "Admin Module - Manage other modules",

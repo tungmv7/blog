@@ -7,7 +7,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use app\modules\admin\assets\AdminAssets;
+use sim\modules\admin\assets\AdminAssets;
 
 AdminAssets::register($this);
 ?>
@@ -56,33 +56,19 @@ NavBar::end();
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-
             <?php
                 if (!empty($this->params['menu'])) {
                     echo Nav::widget([
-                        'class' => 'nav nav-sidebar',
-                        'items' => $this->params['menu']
+                        'items' => $this->params['menu'],
+                        'options' => [
+                            'class' => 'nav nav-sidebar'
+                        ]
                     ]);
                 }
             ?>
-            <ul class="nav nav-sidebar">
-                <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Analytics</a></li>
-                <li><a href="#">Export</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-                <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Analytics</a></li>
-                <li><a href="#">Export</a></li>
-            </ul>
-
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <?= Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
+            <?//= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : []]) ?>
             <?= $content ?>
         </div>
     </div>

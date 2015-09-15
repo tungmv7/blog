@@ -20,6 +20,7 @@ $config = [
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
+            'showScriptName' => false
         ],
         'view' => [
             'class' => 'app\components\View'
@@ -58,10 +59,10 @@ $config = [
     ],
     'modules' => [
         'admin' => [
-            'class' => 'app\modules\admin\Module'
+            'class' => 'sim\modules\admin\Module'
         ],
         'post' => [
-            'class' => 'app\modules\post\Module'
+            'class' => 'sim\modules\post\Module'
         ]
     ] ,
 

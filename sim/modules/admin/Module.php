@@ -1,10 +1,10 @@
 <?php
 
-namespace app\modules\admin;
+namespace sim\modules\admin;
 
 class Module extends \app\components\Module
 {
-    public $controllerNamespace = 'app\modules\admin\controllers';
+    public $controllerNamespace = 'sim\modules\admin\controllers';
 
     public function init()
     {
