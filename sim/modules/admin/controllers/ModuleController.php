@@ -33,8 +33,6 @@ class ModuleController extends Controller
      */
     public function actionIndex()
     {
-        // get all modules
-        $modules = \sim\modules\admin\helpers\ModuleHelpers::getModules();
 
         $searchModel = new ModuleQuery();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);

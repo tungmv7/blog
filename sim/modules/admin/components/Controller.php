@@ -1,6 +1,8 @@
 <?php
 namespace sim\modules\admin\components;
 
+use yii\helpers\VarDumper;
+
 class Controller extends \yii\web\Controller
 {
 
@@ -12,7 +14,6 @@ class Controller extends \yii\web\Controller
             ['label' => \Yii::t('admin', 'Manage Modules'), 'url' => ['module/index']],
             ['label' => \Yii::t('admin', 'Create Module'), 'url' => ['module/create']]
         ];
-
         $this->layout = "admin";
     }
 

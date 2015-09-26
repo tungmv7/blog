@@ -1,10 +1,9 @@
 <?php
 
-namespace app\modules\post\controllers\admin;
+namespace sim\modules\post\controllers\admin;
 
-use yii\web\Controller;
 
-class DefaultController extends Controller
+class DefaultController extends \sim\modules\admin\components\Controller
 {
     public function actionIndex()
     {

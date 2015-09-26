@@ -57,14 +57,14 @@ NavBar::end();
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <?php
-            if (!empty($this->params['menu'])) {
-                echo Nav::widget([
-                    'items' => $this->params['menu'],
-                    'options' => [
-                        'class' => 'nav nav-sidebar'
-                    ]
-                ]);
-            }
+                if (!empty($this->params['menu'])) {
+                    echo Nav::widget([
+                        'items' => $this->params['menu'],
+                        'options' => [
+                            'class' => 'nav nav-sidebar'
+                        ]
+                    ]);
+                }
             ?>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">

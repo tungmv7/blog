@@ -2,7 +2,7 @@
 
 namespace sim\modules\admin;
 
-class Module extends \sim\modules\admin\components\Module
+class Module extends \sim\components\Module
 {
     public $controllerNamespace = '\sim\modules\admin\controllers';
 

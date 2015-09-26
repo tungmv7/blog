@@ -11,4 +11,8 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../config/web.php'),
     require(__DIR__ . '/../sim/modules/admin/config/sim.php')
 );
+//echo "<pre>";
+//var_dump($config);
+//echo "</pre>";
+//exit;
 (new yii\web\Application($config))->run();

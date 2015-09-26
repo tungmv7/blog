@@ -2,8 +2,7 @@
   "id": "admin",
   "name": "Admin",
   "class": "sim\\modules\\admin\\Module",
-  "isRequired": true,
-  "isCoreModule": true,
+  "isCore": true,
   "description": "Admin Module - Manage other modules",
   "keywords": [
     "core", "admin"

@@ -2,8 +2,7 @@
   "id": "post",
   "name": "Post",
   "class": "sim\\modules\\post\\Module",
-  "isRequired": true,
-  "isCoreModule": true,
+  "isCore": true,
   "description": "Post Module - Manage posts",
   "keywords": [
     "post"

@@ -1,10 +1,10 @@
 <?php
 
-namespace app\modules\post;
+namespace sim\modules\post;
 
-class Module extends \app\components\Module
+class Module extends \sim\components\Module
 {
-    public $controllerNamespace = 'app\modules\post\controllers';
+    public $controllerNamespace = '\sim\modules\post\controllers';
 
     public function init()
     {

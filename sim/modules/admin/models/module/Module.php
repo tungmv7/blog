@@ -16,6 +16,19 @@ use Yii;
  */
 class Module extends \yii\db\ActiveRecord
 {
+    const STATUS_ACTIVE = 'active';
+    const STATUS_PENDING = 'pending';
+    const STATUS_INACTIVE = 'inactive';
+
+    public static function getStatuses()
+    {
+        return [
+            self::STATUS_ACTIVE => Yii::t('admin', 'Active'),
+            self::STATUS_PENDING => Yii::t('admin', 'Pending'),
+            self::STATUS_INACTIVE => Yii::t('admin', 'Inactive'),
+        ];
+    }
+
     /**
      * @inheritdoc
      */
