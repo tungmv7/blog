@@ -28,7 +28,7 @@ class ModuleAutoLoad implements  BootstrapInterface
         $moduleConfigurations = Yii::$app->cache->get($this->cacheKey);
 
         if (YII_DEBUG) {
-            $moduleConfigurations = false;
+            // $moduleConfigurations = false;
         }
 
         if ($moduleConfigurations === false) {
